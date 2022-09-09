@@ -38,6 +38,7 @@ namespace EmailSender
                 message.From = new MailAddress("fkiprotich845@gmail.com");
 
                 message.Body = txtBody.Text;
+                message.IsBodyHtml = checkBox1.Checked ? true : false;
                 //if (IsValidEmail(txtTo.Text))
 
                 //{

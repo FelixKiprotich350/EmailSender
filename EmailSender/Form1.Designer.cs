@@ -38,11 +38,12 @@ namespace EmailSender
             this.label3 = new System.Windows.Forms.Label();
             this.txtBody = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(279, 63);
+            this.btnSend.Location = new System.Drawing.Point(268, 73);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(75, 23);
             this.btnSend.TabIndex = 0;
@@ -103,7 +104,7 @@ namespace EmailSender
             this.txtBody.Location = new System.Drawing.Point(95, 144);
             this.txtBody.Multiline = true;
             this.txtBody.Name = "txtBody";
-            this.txtBody.Size = new System.Drawing.Size(147, 85);
+            this.txtBody.Size = new System.Drawing.Size(248, 108);
             this.txtBody.TabIndex = 8;
             // 
             // label4
@@ -115,11 +116,22 @@ namespace EmailSender
             this.label4.TabIndex = 7;
             this.label4.Text = "Subject";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(32, 165);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(55, 17);
+            this.checkBox1.TabIndex = 9;
+            this.checkBox1.Text = "IsHtml";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(376, 286);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.txtBody);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtSubject);
@@ -130,7 +142,7 @@ namespace EmailSender
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSend);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Send Email";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,6 +159,7 @@ namespace EmailSender
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtBody;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
